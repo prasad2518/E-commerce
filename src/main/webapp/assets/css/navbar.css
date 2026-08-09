@@ -1,0 +1,241 @@
+:root {
+    --primary-color: #ff3e6c;
+    --primary-hover: #e0325c;
+    --dark-bg: #121212;
+    --text-color: #282c3f;
+    --text-muted: #686b78;
+    --border-color: #eaeaec;
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --nav-height: 72px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-wrapper {
+    flex: 1;
+}
+
+/* Navbar Container */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    height: var(--nav-height);
+}
+
+.nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-color);
+    letter-spacing: -0.5px;
+}
+
+.logo-highlight {
+    color: var(--primary-color);
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Category Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--border-color);
+    padding: 8px 0;
+    list-style: none;
+    z-index: 1100;
+}
+
+.dropdown-right {
+    left: auto;
+    right: 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    color: var(--text-color);
+}
+
+.dropdown-menu li a:hover {
+    background-color: #fff0f3;
+    color: var(--primary-color);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Nav Right Section */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Search Form */
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-wrapper input {
+    padding: 8px 36px 8px 14px;
+    border: 1px solid #d4d5d9;
+    border-radius: 20px;
+    background: #f5f5f6;
+    font-size: 13px;
+    width: 220px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-wrapper input:focus {
+    width: 280px;
+    background: #ffffff;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(255, 62, 108, 0.15);
+}
+
+.search-wrapper button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Cart Icon & Badge */
+.cart-icon-btn {
+    position: relative;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 6px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    background: var(--primary-color);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Buttons */
+.nav-btn {
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-secondary {
+    color: var(--text-color);
+    border: 1px solid #d4d5d9;
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+}
+
+.user-greeting {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: #f5f5f6;
+}

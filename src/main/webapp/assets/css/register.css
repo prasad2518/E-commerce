@@ -1,0 +1,140 @@
+/* ===========================
+   Register Page
+=========================== */
+
+.register-container {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f4f6f9;
+}
+
+.register-card {
+    width: 500px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.register-card h2 {
+    text-align: center;
+    color: #222;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.register-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    font-family: inherit;
+}
+
+.form-control:focus {
+    border-color: #00bfff;
+    box-shadow: 0 0 6px rgba(0,191,255,0.3);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: #00c8ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+    background: #009fd6;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+.login-link a {
+    color: #00a8e8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message */
+
+.error-message {
+    background: #ffe5e5;
+    color: #d63031;
+    border: 1px solid #f5b7b1;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Success Message */
+
+.success-message {
+    background: #eafaf1;
+    color: #1e8449;
+    border: 1px solid #abebc6;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .register-card {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .register-card h2 {
+        font-size: 28px;
+    }
+
+}
